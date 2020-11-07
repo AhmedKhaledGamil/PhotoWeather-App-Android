@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_large"
+        android:background="@drawable/bg_layout_white"
+        android:elevation="@dimen/spacing_small"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/permissionTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_regular"
+            android:gravity="center"
+            android:padding="@dimen/spacing_medium"
+            android:text="@string/enable_camera"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_medium" />
+
+        <Button
+            android:id="@+id/permissionBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/spacing_xl"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:layout_marginEnd="@dimen/spacing_xl"
+            android:background="@drawable/bg_layout_white"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@font/font_bold"
+            android:text="@string/turn_on"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/font_large" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

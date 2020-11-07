@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PhotoWeather App</string>
+    <string name="turn_on">Turn On</string>
+    <string name="enable_camera">You need to enable camera permission to be able to use the app</string>
+    <string name="enable_location">You need to enable location permission to be able to use the app</string>
+    <string name="enable_read">You need to enable read permission to be able to use the app</string>
+    <string name="enable_write">You need to enable write permission to be able to use the app</string>
+    <string name="open_location">You need to open Location service to be able to use the app</string>
+    <string name="open_wifi">You need to open Wifi service to be able to use the app</string>
+    <string name="new_photo">New Photo</string>
+    <string name="history">History</string>
+    <string name="share_to">Share to</string>
+    <string name="twitter">Twitter</string>
+    <string name="no_images_found">No Images Found\nStart Taking New Photos!</string>
+</resources>

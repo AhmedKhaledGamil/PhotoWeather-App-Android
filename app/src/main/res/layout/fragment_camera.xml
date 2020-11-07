@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cameraLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_large"
+            android:background="@drawable/bg_layout_white"
+            android:backgroundTint="@color/colorAccent"
+            android:elevation="@dimen/spacing_small"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/dataLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_location"
+                    android:drawablePadding="@dimen/spacing_small"
+                    android:fontFamily="@font/font_regular"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_small"
+                    tools:ignore="UseCompatTextViewDrawableXml" />
+
+                <TextView
+                    android:id="@+id/weather"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:drawableStart="@drawable/ic_baseline_ac_unit"
+                    android:drawablePadding="@dimen/spacing_small"
+                    android:fontFamily="@font/font_regular"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_small"
+                    tools:ignore="UseCompatTextViewDrawableXml" />
+
+                <TextView
+                    android:id="@+id/temp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:drawableStart="@drawable/ic_baseline_wb_sunny"
+                    android:drawablePadding="@dimen/spacing_small"
+                    android:fontFamily="@font/font_regular"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_small"
+                    tools:ignore="UseCompatTextViewDrawableXml" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/newPhotoBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/spacing_xl"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:layout_marginEnd="@dimen/spacing_xl"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:background="@drawable/bg_layout_white"
+                android:fontFamily="@font/font_bold"
+                android:text="@string/new_photo"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_large" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.crystal.crystalpreloaders.widgets.CrystalPreloader
+        android:id="@+id/loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:crs_pl_bg_color="#fff"
+        app:crs_pl_fg_color="@color/colorAccent"
+        app:crs_pl_size="small"
+        app:crs_pl_style="hasher"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
